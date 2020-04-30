@@ -3,25 +3,42 @@
 
     {%- include head.html -%}
 
-    <body id="page-top">
+    <body id="post-body">
 
         {%- include header.html -%}
 
-        <div class="container blog-page" style="display: table; clear: both; margin-top: 120px">
-            <div class="side-menu">
-                <ul style="list-style: none">
+        <nav class="navbar navbar-expand-lg bg-primary" id="sideNav">
+            <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#sidebarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Table of contents
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="sidebarResponsive" style="padding: 10px;">
+                <ul class="navbar-nav ml-auto" style="list-style: none">
                     {% for post in site.categories.blog %}
                         <li class="nav-item">
                             <a class="nav-link text-secondary" href="{{ post.url }}">
-                                <span class="navbar-text">{{ post.title }}</span>
+                                <span>{{ post.title }}</span>
                             </a>
                             <hr>
                         </li>
                     {% endfor %}
                 </ul>
             </div>
-
-            <div class="container" style="float: left; width: 70%; padding: 20px">
+        </nav>
+        <div class="container-fluid fluid-adjust blog-page">
+            <div class="side-menu">
+                <ul class="navbar-nav ml-auto" style="list-style: none">
+                    {% for post in site.categories.blog %}
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="{{ post.url }}">
+                                <span>{{ post.title }}</span>
+                            </a>
+                            <hr>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="container blog-content">
                 {{ content }}
             </div>
         </div>
