@@ -1,0 +1,110 @@
+---
+layout: post
+title: Analysis of Influenza A & B using GIS
+permalink: /blog/influenzamapping
+---
+
+<h2> Welcome to</h2> <h4>{{page.title}}</h4>
+<hr>
+
+<p>For decades, health and human well-being have been addressed by the world leaders at
+many occasions willing to improve living conditions of human race on earth. Extensive research,
+discoveries and advances are being made to prevent many of existing mass diseases and cure
+others, but seasonal diseases remain a great challenge for medical experts and decision makers.
+As defined by the third goal of the United Nations Sustainable Development Goals, “Good
+health and well-being” is an indicator of a sustainable development[1], and therefore, draws
+attention on the importance of healthy inhabitants for a country’s development.</p>
+
+<p>As most dynamic systems, Influenza A & B, generically called “flu”, evolves and spreads
+rapidly. Although immunization, screening, and the enforcement of some vaccines are effective
+ways to control, the awareness of the population on the relationship between their environment
+and the contamination of the disease would efficiently contribute to reducing the number of
+infected people.</p>
+
+<p>Geographical Information Systems (GIS) has a broad application in healthcare and is
+used for purposes varying from disease hot-spot analysis, optimal healthcare facility location, to
+drugs dispatch routing[5-6]. Many researchers have provided several ways of using different GIS
+tools, and developed advanced frameworks on how to conduct both experiments and analyses.
+Graves[7] proposed an extensive review of literature on GIS and healthcare access.</p>
+
+<p>The purpose of this project is to apply Geographical Information Systems (GIS) tools to provide the spatial relational schema between different type of city climate and geography and habitat layouts, and the spread of Influenza A & B in New York State. GIS has a broad application in healthcare and is used for purposes varying from disease hot-spot analysis, optimal healthcare facility location, to drugs dispatch routing. This project used GIS tools like “Definition query”, “Add data”, “Hillshade”, “layout”, “raster calculator”, and layers such as Elevation, Roads, wind speed, parcels. <p> <b>Goal: </b> Solution approach to United Nations Sustainable Development Goal 3: “Good health and well-being”.</p>
+
+<h4 class="text-secondary text-uppercase mb-0">GIS based analysis</h4>
+
+<p>Influenza viruses are of four categories A, B, C, and D. While type-C is not very
+common, and type-D is not know to infect people, type-A and type-B are seasonal infectious
+diseases which spread rapidly[8]. These types of viruses spread through behaviors like close
+contact with sick people, coughing in hands, touching eyes, nose and mouth with infected
+hands[9].</p>
+
+<p>For the purpose of this project, two cities in New York State have been chosen: Rochester
+city and Ithaca city. The selection of these places originates from the analysis of data
+representing their infection rates, as shown in Figure 1, and the availability of GIS-friendly data
+for each city in New York State. At first sight, it is clearly observable that Rochester city, seat of
+Monroe county is a highly infected area, compared to Ithaca city, seat of Tompkins county.
+Therefore, the analysis of each city could lead to possible reasons supporting the rate of inflected
+people.</p>
+
+<img class="img-fluid mb-5" src="/assets/img/portfolio/projects/flu_4.jpg" alt="" title="Infection of Influenza A and B in New York State">
+
+<p>In addition to the infection rate in both cities, the layers used in the GIS analysis are as
+following:
+    <ul style="padding-left: 50px">
+        <li>Elevation: This layer consists in the digital elevation model of the city, and allows to
+        observe the land patterns of each city, thereby comparing the size of population in contact
+        with high wind speed.</li>
+        <li>Wind speed: This layer is used to observe the speed of wind going through each city.</li>
+        <li>Parcels: This layer allows to evaluate the demography of each city and obtain the size of
+        the population per area of the city.</li>
+        <li>Roads: This layer is used to validate the parcels data and evaluate the commute habits of
+        the population.</li>
+    </ul>
+</p>
+
+<p>Integrating the aforementioned layers, three different maps are generated for analysis and
+comparison purposes. Figure 2 provides an initial overview of the wind speed over NYS, and could lead to infer that the difference between the rates of Influenza infection in Rochester and Ithaca is due to the
+speed of wind. However, we can observe that New York city also possess a high rate of infection
+but relatively low speed of wind. Therefore, further variables should be taken into account.</p>
+
+<img class="img-fluid mb-5" src="/assets/img/portfolio/projects/flu_1.jpg" alt="" title="New York state wind speed and Influenza infection rate">
+
+<p>Figure 3 and Figure 4 respectively display Rochester city and Ithaca city with population,
+transportation, wind speed and elevation layers. Observations yielded from the two maps can be summarized as following: the majority of Rochester city population lives on a high elevation
+land, submerged by a relatively higher speed wind, whereas the majority of Ithaca city
+population lives on a low elevation land with an average wind speed lower than in Rochester
+city.</p>
+
+<img class="img-fluid mb-5" src="/assets/img/portfolio/projects/flu_2.jpg" alt="" title="Map generated for the GIS analysis of Rochester city">
+
+<img class="img-fluid mb-5" src="/assets/img/portfolio/projects/flu_3.jpg" alt="" title="Map generated for the GIS analysis of Ithaca city">
+
+<p>GIS is a powerful tool which has a lot of application in healthcare. This project used GIS
+tools like “Definition query”, “Add data”, “Hillshade”, “layout”, “raster calculator” in order to
+evaluate correlative patterns between a city’s habitats, roads, wind speed, elevation, and the
+spread of Influenza types A and B in New York State. Following the analysis of generated maps,
+we can conclude that the population living in high elevation places where there is considerable
+frequency of high speed wind are more likely to be exposed to Influenza A and B.
+Nevertheless, few factors among those susceptible to propel Influenza’s expansion are
+considered in this project. Therefore, further analysis are required in order to confirm the current
+result.</p>
+
+<h4 class="text-secondary text-uppercase mb-0">Reference</h4>
+<br>
+<ol style="padding-left: 50px">
+    <li>United Nation Development Programme. Sustainable development goals. Retrieved from
+    http://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-3-good-health-andwell-
+    being.html</li>
+    <li>Centers for Disease Control and Prevention. Weekly U.S. Influenza Surveillance Report. Retrieved
+    from https://www.cdc.gov/flu/weekly/index.html</li>
+    <li>Centers for Disease Control and Prevention. Overview of Influenza Surveillance in the United States. Retrieved from https://www.cdc.gov/flu/weekly/overview.html</li>
+    <li>Centers for Disease Control and Prevention. Age Group Distribution of Influenza Positive Specimens
+    Reported by Public Health Laboratories, National Summary, 2018-19 Influenza Season through the
+    Week Ending February 23, 2019. Retrieved from https://gis.cdc.gov/grasp/fluview/flu_by_age_virus.html</li>
+    <li>Bailony, M. R., Hararah, M. K., Salhab, A. R., Ghannam, I., Abdeen, Z., & Ghannam, J. (2011).    Cancer registration and healthcare access in West Bank, Palestine: A GIS analysis of childhood    cancer, 1998–2007. International journal of cancer, 129(5), 1180-1189.</li>
+    <li>Noon, C. E., & Hankins, C. T. (2001). Spatial data visualization in healthcare: supporting a facility location decision via GIS-based market analysis. In Proceedings of the 34th Annual Hawaii    International Conference on System Sciences, 10.</li>
+    <li>Graves, B. A. (2008). Integrative literature review: a review of literature related to geographical information systems, healthcare access, and health outcomes. Perspectives in Health Information Management/AHIMA, American Health Information Management Association, 5.</li>
+    <li>Centers for Disease Control and Prevention. Types of Influenza viruses. Retrieved from https://www.cdc.gov/flu/about/viruses/types.html</li>
+    <li>Rochester Institute of Technology Division of Student Affairs Wellness. Public Service Announcement - The Flu. Broadcast on January 25, 2019</li>
+</ol>
+
+<p>Last updated on <i>{{ page.date | date_to_string }}</i></p>

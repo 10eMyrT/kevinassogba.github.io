@@ -1,0 +1,67 @@
+---
+layout: default
+title: Guess who wrote this paragraph!
+permalink: /projects/tellmewho
+excerpt: >
+    This project consists in designing two classifiers (decision tree classifier and logistic regression classifier). The objective of the project is to classify authorship of a given text passage, based on features selected by the designer. Three authors are considered for this initial version of the project: <b>Arthur Conan Doyle, Jane Austin, Herman Melville</b>.
+images:
+- /assets/img/portfolio/projects/game.png
+---
+<div class="portfolio-modal mfp-hide" id="portfolio-modal-21">
+  <div class="portfolio-modal-dialog bg-white">
+    <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+      <i class="fa fa-3x fa-times"></i>
+    </a>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-secondary text-uppercase mb-0 text-center">{{page.title}}</h2>
+          <hr class="star-dark mb-5">
+          <p class="mb-5 text-justify">
+              <p class="mb-3 text-justify">
+              This project consists in designing two classifiers (decision tree classifier and logistic regression classifier). The objective of the project is to classify authorship of a given text passage, based on features selected by the designer. Three authors are considered for this initial version of the project: <b>Arthur Conan Doyle, Jane Austin, Herman Melville</b>. Prior to designing the classifiers, the selection of features among the following 11 different parameters is introduced.
+              <ul>
+                  <li>The number of quotes</li>
+                  <li>The number of "comma"</li>
+                  <li>The number of "semi-column"</li>
+                  <li>The number of instances of first person pronoun: I, me, my, mine</li>
+                  <li>The number of instances of third person pronoun: He, She, They</li>
+                  <li>The number of "The" used</li>
+                  <li>The number of conditionals: If, unless, whether</li>
+                  <li>The number of adverb of contraposition and negation: not, no, but, however</li>
+                  <li>The average length of sentences</li>
+                  <li>The average length of used words</li>
+                  <li>The maximum word length</li>
+              </ul>
+              </p>
+              <p class="mb-3 text-justify">
+              These parameters are based on reading the document and noticing the difference in style from the authors. In order to select the best features, a series of analysis was performed. Following the comparison of the performances, the best accuracy is obtained with the 7 following features:
+              <ul>
+                  <li>The number of "comma" + number of "sentence (.)"</li>
+                  <li>The number of "semi-column"</li>
+                  <li>The number of instances of third person pronoun: He, She, They</li>
+                  <li>The number of "The" used</li>
+                  <li>The average length of sentences</li>
+                  <li>The average length of used words</li>
+                  <li>The maximum word length</li>
+              </ul>
+              </p>
+              <h5>Decision tree</h5>
+              <p class="mb-3 text-justify">A decision tree classifier is designed such that the model is build using the training data, and used to predict the ground truth of the testing data. Based on the prediction, the accuracy is computed and returned. Initially, in order to build the model, the dataset is split based on the entropy and information gain criteria, before checking if a leaf node is reached. In case there is still any feature to evaluate, the process continues. Once there is no question, a count based pruning occurs to define a leaf node. The prediction portion of the project uses a fit function to check for validity. Post prediction, the result is compared with the original data, resulting in the a given accuracy. In average, the computation using the decision tree happened within 10 seconds, and returns an accuracy of 70%, in average.</p>
+              <h5>Logistic regression</h5>
+              <p class="mb-3 text-justify">Different from the decision tree classifier, the logistic classifier required to implement 3 separate binary classification to be able to classify 3 different authors. A method is used to convert the ground truth of a given author to 1 and others to 0 to generate the data frame for a single classification problem. A set of data is used to learn the weights. I used the sigmoid function here and updated the weights by means of the gradient. Several experiments were conducted in order to tune parameters. Based on the value of the prediction in each of the binary classifications , I compared the columns of the matrix and assign as label the node with highest value. Initially, I considered 1e-6 as learning rate, sample size of 10 to confirm the functionality of each method. Within 1 iteration, found an accuracy of 30%. With 50 iterations, accuracy reached 40%. Increasing the number of iteration to 500 did not result in more accuracy, but it dropped to 20%. Consequently, considered tweaking other parameters. Maintaining num_iteration = 500, and size = 10, a learning rate of 1e-5 allowed more convergence, reaching 60% of accuracy. In the process of experimenting, I noticed that with learning_rate >= 1e-3 and other parameters similar, the accuracy is 100%, result which may lead to think about overfitting. Consequently, I increased the size of the data to check its results. The outcome is 66% and confirms the inference tat due to the size of the dataset, the model might have overfitted. Other experiments are summarized in the table below.
+              </p>
+              <h5>Testing results</h5>
+              <p class="mb-3 text-justify">The average accurage of the best model is 75%. In addition to generating the prediction of each classifier, the best model is selected and its results displayed. A caption of the testing results for one trial is provided below. In that picture, we can observe that the decision tree classifier is the best model and 9 out of 10 testing files are accuratly predicted. A testing file is composed of 250 words from apassage written by one of the authors. Codes to reproduce these experiements will be shared soon via my github.
+              </p>
+          </p>
+          <div class="col-lg-8 mx-auto text-center ">
+              <img class="img-fluid mb-5" src="/assets/img/portfolio/projects/class_pic.png" alt="">
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="/">
+                  <i class="fa fa-close"></i> Close Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

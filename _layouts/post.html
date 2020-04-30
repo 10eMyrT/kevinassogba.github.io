@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+    {%- include head.html -%}
+
+    <body id="page-top">
+
+        {%- include header.html -%}
+
+        <div class="container blog-page" style="display: table; clear: both; margin-top: 120px">
+            <div class="side-menu">
+                <ul style="list-style: none">
+                    {% for post in site.categories.blog %}
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="{{ post.url }}">
+                                <span class="navbar-text">{{ post.title }}</span>
+                            </a>
+                            <hr>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="container text-justify" style="float: left; width: 70%; padding: 20px">
+                {{ content }}
+            </div>
+        </div>
+
+        {%- include footer.html -%}
+    </body>
+
+</html>

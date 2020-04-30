@@ -1,2 +1,22 @@
-name: Kevin Assogba, 10eMyrT
+title: Kevin Assogba
+email: kevinassogba@gmail.com
+description: >-
+  This project consists in building my personal website to share my background,
+  some of my projects, and my thoughts about certain topics through my blogs.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  10eMyrT
+
+# Build settings
 markdown: kramdown
+theme: minima
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE.txt

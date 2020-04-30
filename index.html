@@ -1,618 +1,408 @@
 ---
 layout: default
 title: Kevin Assogba
+images:
+- /assets/img/gallery/stem.jpg
+- /assets/img/gallery/innovation.jpg
+- /assets/img/gallery/non_return_gate.jpg
+- /assets/img/gallery/monument.jpg
 ---
 
-  <!-- Header -->
-  <header class="masthead bg-primary text-white text-center">
+<div class="img-animtion" id="gallery" style="padding-top:75px">
+    {% include gallery.html %}
+</div>
+
+<!-- Introduction -->
+<section class="masthead bg-primary text-white text-center" id="introduction">
     <div class="container">
-      <img class="img-fluid mb-6 d-block mx-auto" width="100px" height="100px" style="border-radius: 75px" src="/img/profile.png" alt="">
-      <h1 class="text-uppercase mb-0">Kevin Assogba</h1>
-      <hr class="star-light">
-      <h3 class="font-weight-light mb-4">Software Engineer | Data Analyst | Logistics Engineer</h3>
-      <div class="col-lg-8 mx-auto">
-        <P class="lead" align = "justify"> Graduate student in Computer Science with an interest in high performance computing, I have a M. Eng degree in Logistics Engineering, with Transportation as concentration. I am an advocate of teamwork and passionate about R&D.</P>
-      </div>
-    </div>
-  </header>
-
-  <!-- Portfolio Grid Section -->
-  <section class="portfolio" id="portfolio">
-    <div class="container">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-      <hr class="star-dark mb-5">
-      <div class="d-flex justify-content-around">
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1" target="_blank">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="rounded img-fluid d-block" width="300px" height="300px" src="img/portfolio/publications/research.jpeg" alt="">
-            <h3 class="text-center text-capitalize"><font color = "black" font-family = "verdana">Publications</font></h3>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4"> 
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2" target="_blank">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="rounded mx-auto d-block" width="180px" height="180px" src="/img/portfolio/projects/projects.jpeg" alt="">
-            <h3 class="text-center text-capitalize"><font color = "black" font-family = "verdana">Projects</font></h3>
-          </a>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Portfolio Modals -->
-
-  <!-- Portfolio Modal 1 - Publications-->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0 text-center">Publications</h2>
-            <hr class="star-dark mb-5">
-            <ol>
-                <li>
-                    <p>Wang, Y., <b>Assogba, K.</b>, Fan, J., Xu, M., Liu, Y., Wang, H., 2019. <cite> Multi-depot green vehicle routing problem with shared transportation resource: Integration of time-dependent speed and piecewise penalty cost</cite>. Journal of Cleaner Production, 232, 12-29.
-                    <a href = "https://doi.org/10.1016/j.jclepro.2019.05.344" target="_blank"> <i class="fas fa-book-reader"></i></a>
-                    </p>
-                </li>
-
-                <li>
-                    <p>梁喜, <b>凯文</b>, 2019. <cite>考虑客户聚类与产品回收的两级闭环物流网络选址路径优化</cite>, 计算机应用, 39(2):604-610.<a href = "/pdf/考虑客户聚类与产品回收的两级闭环物流网络选址路径优化.pdf" target="_blank"> <i class="fas fa-book-reader"></i></a>
-                    </p>
-                    <p>Liang, X., <b>Assogba, K.</b>, 2019. <cite>Two-echelon closed-loop logistics network location-routing optimization basedon customer clustering and product recovery</cite>. Journal of Computer Applications, 39(2):604-610.</p>
-                </li>
-
-                <li>
-                    <p>Wang, Y., <b>Assogba, K.</b>, Liu, Y., Ma, X., Xu, M., Wang, Y., 2018. <cite>Two-echelon location-routing optimization with time windows based on customer clustering</cite>. Expert Systems with Applications, 104, 244-260.
-                    <a href = "https://doi.org/10.1016/j.eswa.2018.03.018" target="_blank"> <i class="fas fa-book-reader"></i></a>
-                    </p>
-                </li>
-
-                <li>
-                    <p>Wang, Y., Peng, S., <b>Assogba, K.</b>, Liu, Y., Wang, H., Xu, M., Wang, Y., 2018. <cite>Implementation of Cooperation for Recycling Vehicle Routing Optimization in Two-Echelon Reverse Logistics Networks</cite>. Sustainability, 10(5), 1358.
-                    <a href = "https://doi.org/10.3390/su10051358" target="_blank"> <i class="fas fa-book-reader"></i></a>
-                    </p>
-                </li>
-
-                <li>
-                    <p>Wang, Y., Yuan, Y., <b>Assogba, K.</b>, Gong, K., Wang, H. Xu, M., Wang, Y., 2018. <cite>Design and Profit Allocation in Two-Echelon Heterogeneous Cooperative Logistics Network </cite>. Journal of Advanced Transportation. Article ID 4607493.
-                    <a href = "https://doi.org/10.1155/2018/4607493" target="_blank"> <i class="fas fa-book-reader"></i></a>
-                    </p>
-                </li>
-
-                <li>
-                    <p>Wang, Y., Zhang, J., <b>Assogba, K.</b>, Liu, Y., Xu, M., Wang, Y., 2018. <cite>Collaboration and transportation resource sharing in multiple centers vehicle routing optimization with delivery and pickup</cite>. Knowledge-Based Systems, 160, 296-310.
-                    <a href = "https://doi.org/10.1016/j.knosys.2018.07.024" target="_blank"> <i class="fas fa-book-reader"></i></a>
-                    </p>
-                </li>
-
-                <li>
-                    <p>Wang, Y., Zhang, S., <b>Assogba, K.</b>, Fan, J., Xu, M., Wang, Y., 2018. <cite>Economic and environmental evaluations in the two-echelon collaborative multiple centers vehicle routing optimization</cite>. Journal of Cleaner Production, 197, 443-461.
-                    <a href = "https://doi.org/10.1016/j.jclepro.2018.06.208" target="_blank"> <i class="fas fa-book-reader"></i></a>
-                    </p>
-                </li>
-
-                <li>
-                    <p>Wang, Y., Peng, S., Xu, C., <b>Assogba, K.</b>, Wang, H., Xu, M., Wang, Y., 2018. <cite>Two-echelon logistics delivery and pickup network optimization based on integrated cooperation and transportation fleet sharing</cite>. Expert Systems with Applications, 113, 44-65.
-                    <a href = "https://doi.org/10.1016/j.eswa.2018.06.037" target="_blank"> <i class="fas fa-book-reader"></i></a>
-                    </p>
-                </li>
-
-                <li>
-                    <p>Xu, G., Xu, M., Wang, Y., Liu, Y., <b>Assogba, K.</b>, 2018. <cite>Optimization of energy supply system under information variations based on gas stations queuing analyses</cite>. Systems Science & Control Engineering, 6(2), 10-23.
-                    <a href = "https://doi.org/10.1080/21642583.2018.1480434" target="_blank"> <i class="fas fa-book-reader"></i></a>
-                    </p>
-                </li>
-
-                <li>
-                    <p>梁喜, <b>凯文</b>, 2017. <cite>模糊综合评价法在西非国家国内快递行业的应用研究</cite>, 物流工程与管理, 39(1):67-70.
-                    <a href = "/pdf/模糊综合评价法在西非国家国内快递行业的应用研究.pdf" target="_blank"> <i class="fas fa-book-reader"></i></a>
-                    </p>
-                    <p>Liang, X., <b>Assogba, K.</b>, 2017. <cite>Application of fuzzy comprehensive evaluation method in the West African countries domestic courier industry</cite>. Logistics engineering and management, 39(1):67-70.</p>
-                </li>
-            </ol>
-            <div class="col-lg-8 mx-auto text-center ">
-                <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                    <i class="fa fa-close"></i> Close</a>
-            </div>
-          </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 2 - Projects-->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-          <h2 class="text-secondary text-uppercase mb-0">Projects</h2>
-          <hr class="star-dark mb-5">
-          <div class="row">
-              <div class="col-md-6 col-lg-4">
-                <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-21">
-                  <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                    <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                      <i class="fas fa-search-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img class="img-fluid" src="img/portfolio/projects/game.png" alt="">
-                  <h4 class="text-center text-capitalize"><font color = "black" font-family = "verdana">Tell me who with Machine Learning</font></h4>
-                </a>
-              </div>
-            <div class="col-md-6 col-lg-4">
-              <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-22">
-                <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                  <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                    <i class="fas fa-search-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img class="img-fluid" src="img/portfolio/projects/circus.png" alt="">
-                <h3 class="text-center text-capitalize"><font color = "black" font-family = "verdana">Influenza A & B in New York State with GIS</font></h3>
-              </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-23">
-                <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                  <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                    <i class="fas fa-search-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img class="img-fluid" src="img/portfolio/projects/safe.png" alt="">
-                <h3 class="text-center text-capitalize"><font color = "black" font-family = "verdana">Data management with MySQL</font></h3>
-              </a>
-            </div>
-          </div>
-
-          <div class="mb-5 mx-auto">
-          <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-            <i class="fa fa-close"></i>
-            Close</a>
-          </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 21 - Project 1-->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-21">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0 text-center">Tell me who</h2>
-            <hr class="star-dark mb-5">
-            <p class="mb-5 text-justify">
-                <p class="mb-3 text-justify">
-                This project consists in designing two classifiers (decision tree classifier and logistic regression classifier). The objective of the project is to classify authorship of a given text passage, based on features selected by the designer. Three authors are considered for this initial version of the project: <b>Arthur Conan Doyle, Jane Austin, Herman Melville</b>. Prior to designing the classifiers, the selection of features among the following 11 different parameters is introduced.
-                <ul>
-                    <li>The number of quotes</li>
-                    <li>The number of "comma"</li>
-                    <li>The number of "semi-column"</li>
-                    <li>The number of instances of first person pronoun: I, me, my, mine</li>
-                    <li>The number of instances of third person pronoun: He, She, They</li>
-                    <li>The number of "The" used</li>
-                    <li>The number of conditionals: If, unless, whether</li>
-                    <li>The number of adverb of contraposition and negation: not, no, but, however</li>
-                    <li>The average length of sentences</li>
-                    <li>The average length of used words</li>
-                    <li>The maximum word length</li>
-                </ul>
-                </p>
-                <p class="mb-3 text-justify">
-                These parameters are based on reading the document and noticing the difference in style from the authors. In order to select the best features, a series of analysis was performed. Following the comparison of the performances, the best accuracy is obtained with the 7 following features:
-                <ul>
-                    <li>The number of "comma" + number of "sentence (.)"</li>
-                    <li>The number of "semi-column"</li>
-                    <li>The number of instances of third person pronoun: He, She, They</li>
-                    <li>The number of "The" used</li>
-                    <li>The average length of sentences</li>
-                    <li>The average length of used words</li>
-                    <li>The maximum word length</li>
-                </ul>
-                </p>
-                <h5>Decision tree</h5>
-                <p class="mb-3 text-justify">A decision tree classifier is designed such that the model is build using the training data, and used to predict the ground truth of the testing data. Based on the prediction, the accuracy is computed and returned. Initially, in order to build the model, the dataset is split based on the entropy and information gain criteria, before checking if a leaf node is reached. In case there is still any feature to evaluate, the process continues. Once there is no question, a count based pruning occurs to define a leaf node. The prediction portion of the project uses a fit function to check for validity. Post prediction, the result is compared with the original data, resulting in the a given accuracy. In average, the computation using the decision tree happened within 10 seconds, and returns an accuracy of 70%, in average.</p>
-                <h5>Logistic regression</h5>
-                <p class="mb-3 text-justify">Different from the decision tree classifier, the logistic classifier required to implement 3 separate binary classification to be able to classify 3 different authors. A method is used to convert the ground truth of a given author to 1 and others to 0 to generate the data frame for a single classification problem. A set of data is used to learn the weights. I used the sigmoid function here and updated the weights by means of the gradient. Several experiments were conducted in order to tune parameters. Based on the value of the prediction in each of the binary classifications , I compared the columns of the matrix and assign as label the node with highest value. Initially, I considered 1e-6 as learning rate, sample size of 10 to confirm the functionality of each method. Within 1 iteration, found an accuracy of 30%. With 50 iterations, accuracy reached 40%. Increasing the number of iteration to 500 did not result in more accuracy, but it dropped to 20%. Consequently, considered tweaking other parameters. Maintaining num_iteration = 500, and size = 10, a learning rate of 1e-5 allowed more convergence, reaching 60% of accuracy. In the process of experimenting, I noticed that with learning_rate >= 1e-3 and other parameters similar, the accuracy is 100%, result which may lead to think about overfitting. Consequently, I increased the size of the data to check its results. The outcome is 66% and confirms the inference tat due to the size of the dataset, the model might have overfitted. Other experiments are summarized in the table below.
-                </p>
-                <h5>Testing results</h5>
-                <p class="mb-3 text-justify">The average accurage of the best model is 75%. In addition to generating the prediction of each classifier, the best model is selected and its results displayed. A caption of the testing results for one trial is provided below. In that picture, we can observe that the decision tree classifier is the best model and 9 out of 10 testing files are accuratly predicted. A testing file is composed of 250 words from apassage written by one of the authors. Codes to reproduce these experiements will be shared soon via my github.
-                </p>
-            </p>
-            <div class="col-lg-8 mx-auto text-center ">
-                <img class="img-fluid mb-5" src="/img/portfolio/projects/class_pic.png" alt="">
-                <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                    <i class="fa fa-close"></i> Close Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 22 - Project 2-->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-22">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h3 class="text-secondary text-uppercase mb-0">GIS based analysis of correlations between climatic, geographic, demographic patterns, and the spread of Influenza A and B in New York State</h3>
-            <hr class="star-dark mb-5">
-            <p class="mb-5 text-justify">The purpose of this project is to apply Geographical Information Systems (GIS) tools to provide the spatial relational schema between different type of city climate and geography and habitat layouts, and the spread of Influenza A & B in New York State. GIS has a broad application in healthcare and is used for purposes varying from disease hot-spot analysis, optimal healthcare facility location, to drugs dispatch routing. This project used GIS tools like “Definition query”, “Add data”, “Hillshade”, “layout”, “raster calculator”, and layers such as Elevation, Roads, wind speed, parcels. <p> <b>Goal: </b> Solution approach to United Nations Sustainable Development Goal 3: “Good health and well-being”.</p>
-            <p>Click here <a href = "/pdf/GIS based analysis of correlations between climatic, geographic, demographic patterns, and the spread of Influenza A and B in New York State.pdf" target="_blank"> <i class="fas fa-book-reader"></i></a> to read a full report of the project. Few of the generated maps are presented below.
-            </p>
-            </p>
-            <img class="img-fluid mb-5" src="/img/portfolio/projects/flu_1.jpg" alt="">
-            <img class="img-fluid mb-5" src="/img/portfolio/projects/flu_2.jpg" alt="">
-            <img class="img-fluid mb-5" src="/img/portfolio/projects/flu_3.jpg" alt="">
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 23 - Project 3-->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-23">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h3 class="text-secondary text-uppercase mb-0 text-center">Database design and management based on Yelp business directory</h3>
-            <hr class="star-dark mb-5">
-            <p class="mb-5 text-justify">This project consists in designing a database for a better management of collected information. A business related dataset from Yelp has been selected, analyzed, preprocessed and reproduced as a database, which is implemented for a better management of current and future data entries. MySQL Workbench and Netbeans were respectively used as database software and for the design of a Graphical User Interface. In its final form, the database is able to handle queries based on the users selection returning information about Restaurant. Beauty and Adult Entertainment type businesses based on their location, number of stars or wheelchair accessibility. A basic or detailed report options are given to the user to customize the type of information he/she is looking for. A picture of the designed GUI with Netbeans is given below. Key steps in the design process can be summarized as follows:
-            <ul>
-                <li>Creation of the corresponding ER diagram and design of a relational schema</li>
-                <li>Normalization of collected data following constraints of the BCNF standards</li>
-                <li>Creation and population of tables with the normalized data</li>
-                <li>Generation queries for database validation tests</li>
-            </ul>
-            </p>
-            <b>Credits:</b>
-            <ul>
-                <li>Assogba, Kevin</li>
-                <li>Ganjale, Manika Kiran</li>
-                <li>Jaitapkar, Ashwini Mangesh</li>
-                <li>Mehta, Aseem</li>
-                <li>Shah, Deepam</li>
-            </ul>
-            <div class="col-lg-8 mx-auto text-center ">
-                <img class="img-fluid mb-5 text-center" src="/img/portfolio/projects/bd_pic.png" alt="">
-                <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                    <i class="fa fa-close"></i> Close Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  </section>
-
-  <!-- Curriculum Section -->
-  <section class="bg-primary text-white mb-0" id="curriculum">
-
-    <div class="container">
-        <h2 class="text-center text-uppercase text-white">Curriculum</h2>
-        <hr class="star-light mb-5">
+        <img class="img-fluid mb-6 d-block mx-auto" width="100px" height="100px" style="border-radius: 75px" src="/assets/img/profile.png" alt="">
+        <h1 class="text-uppercase mb-0">Kevin Assogba</h1>
+        <hr class="star-light">
+        <h3 class="font-weight-light mb-4">Software Engineer | Data Scientist | Logistics Engineer</h3>
+        <h5 class="font-weight-light mb-4"> Personal Development Enthusiast | Free and Open-Source Software Advocate</h5>
         <div class="col-lg-8 mx-auto">
-            <P class="lead" align = "justify"> For specific information about my curriculum, click on the desired section from the list below. You could also download a complete resume by clicking the "Download Resume!" button below.</P>
+            <P class="lead" align = "justify">
+                Graduate student in Computer Science with an interest in high performance computing, I have a M. Eng degree in Logistics Engineering, with Transportation as concentration. I am an advocate of teamwork and passionate about R&D.
+            </P>
         </div>
+    </div>
+</section>
+
+<!-- Curriculum Section -->
+<section class="masthead bg-secondary text-white mb-0" id="curriculum">
+    <div class="container mb-5">
+        <h2 class="text-center text-uppercase text-white mb-5">Curriculum</h2>
         <nav class="navbar background-color: transparent" style="list-style: none;">
-            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#Education">
-                <i class="fas fa-search-plus "></i>
-                <text style="font: Bold italic 50px Linux Biolinum Keyboard O;"> E </text>
-                <text style="font-family:verdana;"> Education </text>
+            <button type="button" class="lead btn btn-default text-white" data-toggle="modal" data-target="#Education">
+                <img src="/assets/img/curriculum/education.png" width="150" alt=""/>
+                <br><text style="font-family:verdana; font-size:20pt"> Education </text>
             </button>
-            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#Skills">
-                <i class="fas fa-search-plus "></i>
-                <text style="font: Bold italic 50px Linux Biolinum Keyboard O"> S </text>
-                <text style="font-family:verdana;"> Skills </text>
+            <button type="button" class="btn btn-default text-white" data-toggle="modal" data-target="#Skills">
+                <img src="/assets/img/curriculum/skills.png" width="150" alt=""/>
+                <br><text style="font-family:verdana; font-size:20pt"> Skills </text>
             </button>
-            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#Experience">
-                <i class="fas fa-search-plus "></i>
-                <text style="font: Bold italic 50px Linux Biolinum Keyboard O"> E </text>
-                <text style="font-family:verdana;"> Experience </text>
+            <button type="button" class="btn btn-default text-white" data-toggle="modal" data-target="#Experience">
+                <img src="https://www.freeiconspng.com/uploads/customers-icon-3.png" width="150" alt=""/>
+                <br><text style="font-family:verdana; font-size:20pt"> Experience </text>
             </button>
-            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#Memberships">
-                <i class="fas fa-search-plus "></i>
-                <text style="font: Bold italic 50px Linux Biolinum Keyboard O"> M </text>
-                <text style="font-family:verdana;"> Memberships </text>
+            <button type="button" class="btn btn-default text-white" data-toggle="modal" data-target="#Memberships">
+                <img src="https://www.freeiconspng.com/uploads/communication-community-connection-global-internet-network-icon--14.png" width="150" alt=""/>
+                <br><text style="font-family:verdana; font-size:20pt"> Memberships </text>
             </button>
-            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#Awards">
-                <i class="fas fa-search-plus "></i>
-                <text style="font: Bold italic 50px Linux Biolinum Keyboard O"> A </text>
-                <text style="font-family:verdana;"> Awards </text>
+            <button type="button" class="btn btn-default text-white" data-toggle="modal" data-target="#Awards">
+                <img src="/assets/img/curriculum/awards.png" width="150" alt=""/>
+                <br><text style="font-family:verdana; font-size:20pt"> Awards </text>
             </button>
         </nav>
-
-        <!-- Resume -->
-        <P class="lead" align = "justify"><br></P>
-
-        <!-- Education -->
-        <div class="modal fade" id="Education">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="text-center text-capitalize"><font color = "black">Education</font></h3>
-                        <div><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                        </button></div>
-                    </div>
-                    <div class="modal-body">
-                        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-6">
-                            <div class="resume-content">
-                                <h5 class="mb-0 text-secondary">Rochester Institute of Technology - USA</h5>
-                                <div class="subheading mb-6 text-secondary">Master of Science</div>
-                                <div class = "mb-6 text-secondary" align = "justify">Computer Science</div>
-                                <div class="subheading mb-6 text-primary">August 2018 - May 2020</div>
-                                <p class = "mb-6" align = "justify"><font color = "black">GPA: 3.57 / 4.0</font></p>
-                            </div>
-                        </div>
-                        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-6">
-                            <div class="resume-content">
-                                <h5 class="mb-0 text-secondary">Chongqing Jiaotong University - China</h5>
-                                <div class="subheading mb-6 text-secondary">Master of Engineering</div>
-                                <div class = "mb-6 text-secondary" align = "justify">Logistics Engineering</div>
-                                <div class="subheading mb-6 text-primary">September 2015 - June 2018</div>
-                                <p class = "mb-6" align = "justify"><font color = "black">GPA: 3.74 / 4.0</font></p>
-                            </div>
-                        </div>
-                        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-6">
-                            <div class="resume-content">
-                                <h5 class="mb-0 text-secondary">University of Abomey-Calavi - Benin</h5>
-                                <div class="subheading mb-6 text-secondary">Bachelor of Arts</div>
-                                <div class = "mb-6 text-secondary" align = "justify">Applied English Linguistics</div>
-                                <div class="subheading mb-6 text-primary">December 2009 - November 2013</div>
-                                <p class = "mb-6" align = "justify"><font color = "black">GPA: 13.38 / 20</font></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#" data-dismiss="modal">Close </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Skills -->
-        <div class="modal fade" id="Skills">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="text-center text-capitalize"><font color = "black">Skills</font></h3>
-                        <div><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                        </button></div>
-                    </div>
-                    <div class="modal-body">
-                        <h5 class="subheading mb-3 text-secondary">Programming Languages &amp; Tools</h5>
-                        <ul class="col list-inline dev-icons">
-                            <li class="list-inline-item">
-                                <img width="40px" height="40px" style="border-radius: 20px" src="/img/curriculum/java.png" alt="">
-                            </li>
-                            <li class="list-inline-item">
-                                <img width="40px" height="40px" style="border-radius: 20px" src="/img/curriculum/python.png" alt="">
-                            </li>
-                            <li class="list-inline-item">
-                                <img width="40px" height="40px" style="border-radius: 20px" src="/img/curriculum/matlab.gif" alt="">
-                            </li>
-                            <li class="list-inline-item">
-                                <img width="40px" height="40px" style="border-radius: 20px" src="/img/curriculum/mysql.png" alt="">
-                            </li>
-                            <li class="list-inline-item">
-                                <img width="40px" height="40px" style="border-radius: 20px" src="/img/curriculum/Rlogo.png" alt="">
-                            </li>
-                        </ul>
-                        <h5 class="subheading mb-3 text-secondary">Languages</h5>
-                        <ul class="fa-ul mb-3">
-                            <li><font color = "black"><i class="fa-li fa fa-check"></i>
-                                French</font>
-                            </li>
-                            <li><font color = "black"><i class="fa-li fa fa-check"></i>
-                                English</font>
-                            </li>
-                            <li><font color = "black"><i class="fa-li fa fa-check"></i>
-                                Mandarin</font>
-                            </li>
-                        </ul>
-                        <h5 class="subheading mb-3 text-secondary">Aptitudes</h5>
-                        <ul class="fa-ul mb-3">
-                            <li><font color = "black"><i class="fa-li fa fa-check"></i>
-                                Research &amp; Development</font>
-                            </li>
-                            <li><font color = "black"><i class="fa-li fa fa-check"></i>
-                                Collaboration &amp; teamwork</font>
-                            </li>
-                            <li><font color = "black"><i class="fa-li fa fa-check"></i>
-                                Details &amp; big picture oriented</font>
-                            </li>
-                            <li><font color = "black"><i class="fa-li fa fa-check"></i>
-                                Devotion for quick learning</font>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#" data-dismiss="modal">Close </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Experience -->
-        <div class="modal fade" id="Experience">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="text-center text-capitalize"><font color = "black">Experience</font></h3>
-                        <div><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                        </button></div>
-                    </div>
-                    <div class="modal-body">
-                        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-6">
-                            <div class="resume-content">
-                                <h5 class="mb-0 text-secondary">Logistics engineering Intern</h5>
-                                <div class="subheading mb-6 text-secondary">Xiang Mao Logistics - Chongqing (China)</div>
-                                <div class="subheading mb-6 text-primary">March 2016 - June 2016</div>
-                                <ul class="fa-ul mb-6">
-                                    <li><font color = "black"><i class="fa-li fa fa-check"></i>
-                                        Analyzed logistics operations costs on a time frame basis</font>
-                                    </li>
-                                    <li><font color = "black"><i class="fa-li fa fa-check"></i>
-                                        Researched the company’s logistics network to improve its economic and environmental efficiency</font>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-6">
-                            <div class="resume-content">
-                                <h5 class="mb-0 text-secondary">Interpreter &amp; Human Resources Assistant</h5>
-                                <div class="subheading mb-6 text-secondary">Wang Sam Resources Trading Company - Brazzaville (Congo-Brazzaville)</div>
-                                <div class="subheading mb-6 text-primary">December 2013 - July 2014</div>
-                                <ul class="fa-ul mb-6">
-                                    <li><font color = "black"><i class="fa-li fa fa-check"></i>
-                                        Recruited some of the company’s local workers and coordinated the resolution of several internal affairs between foreign and local workers as well as legal issues with local authorities.</font>
-                                    </li>
-                                    <li><font color = "black"><i class="fa-li fa fa-check"></i>
-                                        Managed product flows into and out of the transformation facilities.</font>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-6">
-                            <div class="resume-content">
-                                <h5 class="mb-0 text-secondary">Interpreter &amp; Logistics Manager</h5>
-                                <div class="subheading mb-6 text-secondary">Hong Sen Minerals Trading Company - Abidjan (Côte d’Ivoire)</div>
-                                <div class="subheading mb-6 text-primary">December 2012 - November 2013</div>
-                                <ul class="fa-ul mb-6">
-                                    <li><font color = "black"><i class="fa-li fa fa-check"></i>
-                                        Interpreted and translated documents from/to French, Chinese and English languages.</font>
-                                    </li>
-                                    <li><font color = "black"><i class="fa-li fa fa-check"></i>
-                                        Coordinated logistics during three months one of the company’s loading park.</font>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-6">
-                            <div class="resume-content">
-                                <h5 class="mb-0 text-secondary">Teaching Assistant</h5>
-                                <div class="subheading mb-6 text-secondary">Healer's Society - Abomey-Calavi (Benin)</div>
-                                <div class="subheading mb-6 text-primary">December 2012 - October 2013</div>
-                                <ul class="fa-ul mb-6">
-                                    <li><font color = "black"><i class="fa-li fa fa-check"></i>
-                                        Instructed Freshmen and Sophomore of the English Department of Abomey-calavi University during extracurricular tutoring classes in Mandarin Phonology and English Phonetics</font>
-                                    </li>
-                                    <li><font color = "black"><i class="fa-li fa fa-check"></i>
-                                        Designed and coordinated mock exams to prepare students for midterm and final exams</font>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#" data-dismiss="modal">Close </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Memberships -->
-        <div class="modal fade" id="Memberships">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="text-center text-capitalize"><font color = "black">Club membership</font></h3>
-                        <div><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                        </button></div>
-                    </div>
-                    <div class="modal-body">
-                        <ul class="fa-ul mb-0">
-                            <li class = "mb-3"><font color = "black"><i class="fa-li fa fa-check"></i>
-                                RITficial Intelligence (RIT Artificial Intelligence club) - USA
-                                <div class="subheading mb-6 text-primary">Member</div>
-                                <div class="subheading mb-6 text-primary">August 2018 - Present</div></font>
-                            </li>
-                            <li class = "mb-3"><font color = "black"><i class="fa-li fa fa-check"></i>
-                                ESW-RIT (Engineers for Sustainable World RIT) - USA
-                                <div class="subheading mb-6 text-primary">Member</div>
-                                <div class="subheading mb-6 text-primary">August 2018 - Present</div></font>
-                            </li>
-                            <li class = "mb-3"><font color = "black"><i class="fa-li fa fa-check"></i>
-                                Chongqing Jiaotong University Radio station - China
-                                <div class="subheading mb-6 text-primary">News Reporter</div>
-                                <div class="subheading mb-6 text-primary">2016 - 2017</div></font>
-                            </li>
-                            <li class = "mb-3"><font color = "black"><i class="fa-li fa fa-check"></i>
-                                TEC (Titigweti English Club) - Benin
-                                <div class="subheading mb-6 text-primary">Head of News Section; Secretary General; Vice-President</div>
-                                <div class="subheading mb-6 text-primary">2011 - 2013</div></font>
-                            </li>
-                            <li class = "mb-3"><font color = "black"><i class="fa-li fa fa-check"></i>
-                                Radio Univers - Benin
-                                <div class="subheading mb-6 text-primary">News Reporter</div>
-                                <div class="subheading mb-6 text-primary">2011 - 2012</div></font>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#" data-dismiss="modal">Close </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Awards -->
-        <div class="modal fade" id="Awards">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="text-center text-capitalize"><font color = "black">Awards &amp; Certifications</font></h3>
-                        <div><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                        </button></div>
-                    </div>
-                    <div class="modal-body">
-                        <ul class="fa-ul mb-0">
-                            <li><i class="fa-li fa fa-trophy text-warning"></i>
-                                <font color = "black">'18-20 Fulbright Scholar</font>
-                            </li>
-                            <li><i class="fa-li fa fa-trophy text-warning"></i>
-                                <font color = "black">'14-18 Chinese Government Scholar</font>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#" data-dismiss="modal">Close </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-      <div class="text-center mt-4">
-        </div>
-        <a class="btn btn-xl btn-outline-light" href="/pdf/Kevin_Assogba_Resume.pdf" target="_blank">
-          <i class="fas fa-download mr-2"></i>
-          Download Resume!
-        </a>
     </div>
-  </section>
+    <div class="container mb-0">
+        <div class="text-center">
+            <a class="btn btn-xl btn-outline-light" href="/assets/pdf/Kevin_Assogba_Resume.pdf" target="_blank">
+                <i class="fas fa-download mr-2"></i>
+                Download Resume!
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- About Me Section -->
+<section class="masthead bg-light text-secondary mb-0" id="a_word_from_me">
+    <div class="container">
+        <div class="row">
+            <div class="card col-md-4 col-lg-6 col-4 bg-transparent my-auto" style="border: none">
+                <svg width="350" height="350" style="margin: auto; display: block">
+                    <rect x="0" y="0" rx="20" ry="20" width="250" height="300" fill="none" style="stroke:black;stroke-width:5; opacity:0.75" />
+                    <image width="250px" height="300px" xlink:href="/assets/img/a_word.jpeg" x="50" y="50"/>
+                </svg>
+            </div>
+            <div class="card col-md-4 col-lg-6 col-12 bg-transparent my-auto" style="border: none">
+                <div class="card-body justify-content-center">
+                    <h2 class="card-title mb-3 mt-3">A word about me</h2>
+                    <blockquote>
+                    <p class="lead card-text" style="vertical-align: middle; font-size:20px">
+                        <br>
+                        I dream to live and I live to make my dreams come true. I am the key to my success and I live for it. I have made Trust, Compassion, Humility my strengths, factors which I believe are important for an efficient personal development.
+                    </p>
+                </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Publication Section -->
+<section class="masthead portfolio" id="publications">
+    <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Publications</h2>
+        <hr class="star-dark mb-5">
+        <div class="d-flex justify-content-around">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <ol>
+                            {% for ref in site.data.refs limit: 5 %}
+                            <li>
+                                <p>{{ ref.names }}, {{ ref.year }}. <cite> {{ ref.title }}</cite>. {{ ref.journal }}.
+                                    {% if ref.link %}
+                                    <a href = "{{ ref.link }}" target="_blank"> <i class="fas fa-book-reader"></i></a>
+                                    {% endif %}
+                                </p>
+                            </li>
+                            {% endfor %}
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-2">
+            <div class="text-center">
+                <a class="btn btn-xl btn-outline-dark" href="/publications" target="_blank">
+                    <i class="fas fa-book-reader mr-2"></i>
+                    View more...
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Projects Section -->
+<section class="masthead portfolio bg-primary" id="projects">
+    <div class="container-fluid">
+        <h2 class="text-center text-uppercase text-white mb-0">Projects</h2>
+        <hr class="star-light">
+        <div class="row">
+            {% for post in site.categories.projects %}
+                <div class="col-xl-4 col-md-6 col-lg-4 col-12 py-2 px-2">
+                    <div class="card border-0 bg-transparent">
+                        <div class="card-body text-center">
+                            <img class="w-75 h-50 mb-3" src="{{ post.images }}" alt="Image">
+                            <h5 class="card-title mb-3">{{ post.title }}</h5>
+                            <div class="card-text text-black">
+                                <p>{{ post.excerpt }}</p>
+                                <a class="btn btn-block bg-secondary text-white" href="{{ post.url }}">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Resume -->
+<!-- Education -->
+<div class="modal fade" id="Education">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="text-center text-capitalize"><font color = "black">Education</font></h3>
+                <div><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button></div>
+            </div>
+            <div class="modal-body">
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-6">
+                    <div class="resume-content">
+                        <h5 class="mb-0 text-secondary">Rochester Institute of Technology - USA</h5>
+                        <div class="subheading mb-6 text-secondary">Master of Science</div>
+                        <div class = "mb-6 text-secondary" align = "justify">Computer Science</div>
+                        <div class="subheading mb-6 text-primary">August 2018 - May 2020</div>
+                        <p class = "mb-6" align = "justify"><font color = "black">GPA: 3.57 / 4.0</font></p>
+                    </div>
+                </div>
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-6">
+                    <div class="resume-content">
+                        <h5 class="mb-0 text-secondary">Chongqing Jiaotong University - China</h5>
+                        <div class="subheading mb-6 text-secondary">Master of Engineering</div>
+                        <div class = "mb-6 text-secondary" align = "justify">Logistics Engineering</div>
+                        <div class="subheading mb-6 text-primary">September 2015 - June 2018</div>
+                        <p class = "mb-6" align = "justify"><font color = "black">GPA: 3.74 / 4.0</font></p>
+                    </div>
+                </div>
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-6">
+                    <div class="resume-content">
+                        <h5 class="mb-0 text-secondary">University of Abomey-Calavi - Benin</h5>
+                        <div class="subheading mb-6 text-secondary">Bachelor of Arts</div>
+                        <div class = "mb-6 text-secondary" align = "justify">Applied English Linguistics</div>
+                        <div class="subheading mb-6 text-primary">December 2009 - November 2013</div>
+                        <p class = "mb-6" align = "justify"><font color = "black">GPA: 13.38 / 20</font></p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#" data-dismiss="modal">Close </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Skills -->
+<div class="modal fade" id="Skills">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="text-center text-capitalize"><font color = "black">Skills</font></h3>
+                <div><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button></div>
+            </div>
+            <div class="modal-body">
+                <h5 class="subheading mb-3 text-secondary">Programming Languages &amp; Tools</h5>
+                <ul class="col list-inline dev-icons">
+                    <li class="list-inline-item">
+                        <img width="40px" height="40px" style="border-radius: 20px" src="/assets/img/curriculum/java.png" alt="">
+                    </li>
+                    <li class="list-inline-item">
+                        <img width="40px" height="40px" style="border-radius: 20px" src="/assets/img/curriculum/python.png" alt="">
+                    </li>
+                    <li class="list-inline-item">
+                        <img width="40px" height="40px" style="border-radius: 20px" src="/assets/img/curriculum/matlab.gif" alt="">
+                    </li>
+                    <li class="list-inline-item">
+                        <img width="40px" height="40px" style="border-radius: 20px" src="/assets/img/curriculum/mysql.png" alt="">
+                    </li>
+                    <li class="list-inline-item">
+                        <img width="40px" height="40px" style="border-radius: 20px" src="/assets/img/curriculum/Rlogo.png" alt="">
+                    </li>
+                </ul>
+                <h5 class="subheading mb-3 text-secondary">Languages</h5>
+                <ul class="fa-ul mb-3">
+                    <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                        French</font>
+                    </li>
+                    <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                        English</font>
+                    </li>
+                    <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                        Mandarin</font>
+                    </li>
+                </ul>
+                <h5 class="subheading mb-3 text-secondary">Aptitudes</h5>
+                <ul class="fa-ul mb-3">
+                    <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                        Research &amp; Development</font>
+                    </li>
+                    <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                        Collaboration &amp; teamwork</font>
+                    </li>
+                    <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                        Details &amp; big picture oriented</font>
+                    </li>
+                    <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                        Devotion for quick learning</font>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#" data-dismiss="modal">Close </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Experience -->
+<div class="modal fade" id="Experience">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="text-center text-capitalize"><font color = "black">Experience</font></h3>
+                <div><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button></div>
+            </div>
+            <div class="modal-body">
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-6">
+                    <div class="resume-content">
+                        <h5 class="mb-0 text-secondary">Logistics engineering Intern</h5>
+                        <div class="subheading mb-6 text-secondary">Xiang Mao Logistics - Chongqing (China)</div>
+                        <div class="subheading mb-6 text-primary">March 2016 - June 2016</div>
+                        <ul class="fa-ul mb-6">
+                            <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                                Analyzed logistics operations costs on a time frame basis</font>
+                            </li>
+                            <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                                Researched the company’s logistics network to improve its economic and environmental efficiency</font>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-6">
+                    <div class="resume-content">
+                        <h5 class="mb-0 text-secondary">Interpreter &amp; Human Resources Assistant</h5>
+                        <div class="subheading mb-6 text-secondary">Wang Sam Resources Trading Company - Brazzaville (Congo-Brazzaville)</div>
+                        <div class="subheading mb-6 text-primary">December 2013 - July 2014</div>
+                        <ul class="fa-ul mb-6">
+                            <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                                Recruited some of the company’s local workers and coordinated the resolution of several internal affairs between foreign and local workers as well as legal issues with local authorities.</font>
+                            </li>
+                            <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                                Managed product flows into and out of the transformation facilities.</font>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-6">
+                    <div class="resume-content">
+                        <h5 class="mb-0 text-secondary">Interpreter &amp; Logistics Manager</h5>
+                        <div class="subheading mb-6 text-secondary">Hong Sen Minerals Trading Company - Abidjan (Côte d’Ivoire)</div>
+                        <div class="subheading mb-6 text-primary">December 2012 - November 2013</div>
+                        <ul class="fa-ul mb-6">
+                            <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                                Interpreted and translated documents from/to French, Chinese and English languages.</font>
+                            </li>
+                            <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                                Coordinated logistics during three months one of the company’s loading park.</font>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-6">
+                    <div class="resume-content">
+                        <h5 class="mb-0 text-secondary">Teaching Assistant</h5>
+                        <div class="subheading mb-6 text-secondary">Healer's Society - Abomey-Calavi (Benin)</div>
+                        <div class="subheading mb-6 text-primary">December 2012 - October 2013</div>
+                        <ul class="fa-ul mb-6">
+                            <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                                Instructed Freshmen and Sophomore of the English Department of Abomey-calavi University during extracurricular tutoring classes in Mandarin Phonology and English Phonetics</font>
+                            </li>
+                            <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                                Designed and coordinated mock exams to prepare students for midterm and final exams</font>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#" data-dismiss="modal">Close </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Memberships -->
+<div class="modal fade" id="Memberships">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="text-center text-capitalize"><font color = "black">Club membership</font></h3>
+                <div><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button></div>
+            </div>
+            <div class="modal-body">
+                <ul class="fa-ul mb-0">
+                    <li class = "mb-3"><font color = "black"><i class="fa-li fa fa-check"></i>
+                        RITficial Intelligence (RIT Artificial Intelligence club) - USA
+                        <div class="subheading mb-6 text-primary">Member</div>
+                        <div class="subheading mb-6 text-primary">August 2018 - Present</div></font>
+                    </li>
+                    <li class = "mb-3"><font color = "black"><i class="fa-li fa fa-check"></i>
+                        ESW-RIT (Engineers for Sustainable World RIT) - USA
+                        <div class="subheading mb-6 text-primary">Member</div>
+                        <div class="subheading mb-6 text-primary">August 2018 - Present</div></font>
+                    </li>
+                    <li class = "mb-3"><font color = "black"><i class="fa-li fa fa-check"></i>
+                        Chongqing Jiaotong University Radio station - China
+                        <div class="subheading mb-6 text-primary">News Reporter</div>
+                        <div class="subheading mb-6 text-primary">2016 - 2017</div></font>
+                    </li>
+                    <li class = "mb-3"><font color = "black"><i class="fa-li fa fa-check"></i>
+                        TEC (Titigweti English Club) - Benin
+                        <div class="subheading mb-6 text-primary">Head of News Section; Secretary General; Vice-President</div>
+                        <div class="subheading mb-6 text-primary">2011 - 2013</div></font>
+                    </li>
+                    <li class = "mb-3"><font color = "black"><i class="fa-li fa fa-check"></i>
+                        Radio Univers - Benin
+                        <div class="subheading mb-6 text-primary">News Reporter</div>
+                        <div class="subheading mb-6 text-primary">2011 - 2012</div></font>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#" data-dismiss="modal">Close </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Awards -->
+<div class="modal fade" id="Awards">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="text-center text-capitalize"><font color = "black">Awards &amp; Certifications</font></h3>
+                <div><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button></div>
+            </div>
+            <div class="modal-body">
+                <ul class="fa-ul mb-0">
+                    <li><i class="fa-li fa fa-trophy text-warning"></i>
+                        <font color = "black">'18-20 Fulbright Scholar</font>
+                    </li>
+                    <li><i class="fa-li fa fa-trophy text-warning"></i>
+                        <font color = "black">'14-18 Chinese Government Scholar</font>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#" data-dismiss="modal">Close </button>
+            </div>
+        </div>
+    </div>
+</div>
