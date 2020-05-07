@@ -34,23 +34,23 @@ images:
         <h3 class="text-center text-uppercase text-white mb-5">Curriculum</h3>
         <nav class="navbar justify-content-center background-color: transparent" style="list-style: none;">
             <button type="button" class="lead btn btn-default text-white" data-toggle="modal" data-target="#Education" style="padding: 30px">
-                <img src="/assets/img/curriculum/education.png" width="100" alt=""/>
+                <img src="/assets/img/curriculum/education.png" width="100" alt="ACADEMIA"/>
                 <br><text style="font-family:verdana; font-size:15pt"> Education </text>
             </button>
             <button type="button" class="btn btn-default text-white" data-toggle="modal" data-target="#Skills" style="padding: 30px">
-                <img src="/assets/img/curriculum/skills.png" width="100" alt=""/>
+                <img src="/assets/img/curriculum/skills.png" width="100" alt="SKILLS"/>
                 <br><text style="font-family:verdana; font-size:15pt"> Skills </text>
             </button>
             <button type="button" class="btn btn-default text-white" data-toggle="modal" data-target="#Experience" style="padding: 30px">
-                <img src="https://www.freeiconspng.com/uploads/customers-icon-3.png" width="100" alt=""/>
+                <img src="https://www.freeiconspng.com/uploads/customers-icon-3.png" width="100" alt="WORK"/>
                 <br><text style="font-family:verdana; font-size:15pt"> Experience </text>
             </button>
             <button type="button" class="btn btn-default text-white" data-toggle="modal" data-target="#Memberships" style="padding: 30px">
-                <img src="https://www.freeiconspng.com/uploads/communication-community-connection-global-internet-network-icon--14.png" width="100" alt=""/>
+                <img src="https://www.freeiconspng.com/uploads/communication-community-connection-global-internet-network-icon--14.png" width="100" alt="GROUPS"/>
                 <br><text style="font-family:verdana; font-size:15pt"> Memberships </text>
             </button>
             <button type="button" class="btn btn-default text-white" data-toggle="modal" data-target="#Awards" style="padding: 30px">
-                <img src="/assets/img/curriculum/awards.png" width="100" alt=""/>
+                <img src="/assets/img/curriculum/awards.png" width="100" alt="AWARD"/>
                 <br><text style="font-family:verdana; font-size:15pt"> Awards </text>
             </button>
         </nav>
@@ -164,7 +164,7 @@ images:
                         <div class="subheading mb-6 text-secondary">Master of Science</div>
                         <div class = "mb-6 text-secondary" align = "justify">Computer Science</div>
                         <div class="subheading mb-6 text-primary">August 2018 - May 2020</div>
-                        <p class = "mb-6" align = "justify"><font color = "black">GPA: 3.57 / 4.0</font></p>
+                        <p class = "mb-6" align = "justify"><font color = "black">GPA: 3.58 / 4.0</font></p>
                     </div>
                 </div>
                 <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-6">
@@ -203,23 +203,23 @@ images:
                 </button></div>
             </div>
             <div class="modal-body">
-                <h5 class="subheading mb-3 text-secondary">Programming Languages &amp; Tools</h5>
+                <h5 class="subheading text-secondary">Programming Languages &amp; Tools</h5>
                 <ul class="col list-inline dev-icons">
-                    <li class="list-inline-item">
-                        <img width="40px" height="40px" style="border-radius: 20px" src="/assets/img/curriculum/java.png" alt="">
-                    </li>
-                    <li class="list-inline-item">
-                        <img width="40px" height="40px" style="border-radius: 20px" src="/assets/img/curriculum/python.png" alt="">
-                    </li>
-                    <li class="list-inline-item">
-                        <img width="40px" height="40px" style="border-radius: 20px" src="/assets/img/curriculum/matlab.gif" alt="">
-                    </li>
-                    <li class="list-inline-item">
-                        <img width="40px" height="40px" style="border-radius: 20px" src="/assets/img/curriculum/mysql.png" alt="">
-                    </li>
-                    <li class="list-inline-item">
-                        <img width="40px" height="40px" style="border-radius: 20px" src="/assets/img/curriculum/Rlogo.png" alt="">
-                    </li>
+                    {% for type in site.data.skills %}
+                    {% assign category = type[1] %}
+                        <div class="container">
+                            <h6 class="subheading mt-3 text-dark">{{category.type}}</h6>
+                            {% for skill in category.tools %}
+                                <li class="list-inline-item pr-3 py-2">
+                                    <a class="text-align-center">
+                                        <img width="45px" height="45px" src="{{skill.link}}" alt="">
+                                        <br><text class="text-info text-center" style="font-family:verdana; font-size:12pt">{{skill.name}}</text>
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </div>
+
+                    {% endfor %}
                 </ul>
                 <h5 class="subheading mb-3 text-secondary">Languages</h5>
                 <ul class="fa-ul mb-3">
@@ -233,7 +233,7 @@ images:
                         Mandarin</font>
                     </li>
                 </ul>
-                <h5 class="subheading mb-3 text-secondary">Aptitudes</h5>
+                <h5 class="subheading mb-3 text-secondary">Other aptitudes</h5>
                 <ul class="fa-ul mb-3">
                     <li><font color = "black"><i class="fa-li fa fa-check"></i>
                         Research &amp; Development</font>
@@ -268,9 +268,21 @@ images:
             <div class="modal-body">
                 <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-6">
                     <div class="resume-content">
+                        <h5 class="mb-0 text-secondary">Teaching Assistant(Grader)</h5>
+                        <div class="subheading mb-6 text-secondary">Rochester Institute of Technology - Rochester, NY (USA)</div>
+                        <div class="subheading mb-6 text-dark">August 2019 - December 2019</div>
+                        <ul class="fa-ul mb-6">
+                            <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                                Implemented and graded undergraduate students lab submissions (programming assignments) for the course entitled "Analysis of Algorithms".</font>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-6">
+                    <div class="resume-content">
                         <h5 class="mb-0 text-secondary">Logistics engineering Intern</h5>
                         <div class="subheading mb-6 text-secondary">Xiang Mao Logistics - Chongqing (China)</div>
-                        <div class="subheading mb-6 text-primary">March 2016 - June 2016</div>
+                        <div class="subheading mb-6 text-dark">March 2016 - June 2016</div>
                         <ul class="fa-ul mb-6">
                             <li><font color = "black"><i class="fa-li fa fa-check"></i>
                                 Analyzed logistics operations costs on a time frame basis</font>
@@ -285,7 +297,7 @@ images:
                     <div class="resume-content">
                         <h5 class="mb-0 text-secondary">Interpreter &amp; Human Resources Assistant</h5>
                         <div class="subheading mb-6 text-secondary">Wang Sam Resources Trading Company - Brazzaville (Congo-Brazzaville)</div>
-                        <div class="subheading mb-6 text-primary">December 2013 - July 2014</div>
+                        <div class="subheading mb-6 text-dark">December 2013 - July 2014</div>
                         <ul class="fa-ul mb-6">
                             <li><font color = "black"><i class="fa-li fa fa-check"></i>
                                 Recruited some of the company’s local workers and coordinated the resolution of several internal affairs between foreign and local workers as well as legal issues with local authorities.</font>
@@ -300,7 +312,7 @@ images:
                     <div class="resume-content">
                         <h5 class="mb-0 text-secondary">Interpreter &amp; Logistics Manager</h5>
                         <div class="subheading mb-6 text-secondary">Hong Sen Minerals Trading Company - Abidjan (Côte d’Ivoire)</div>
-                        <div class="subheading mb-6 text-primary">December 2012 - November 2013</div>
+                        <div class="subheading mb-6 text-dark">December 2012 - November 2013</div>
                         <ul class="fa-ul mb-6">
                             <li><font color = "black"><i class="fa-li fa fa-check"></i>
                                 Interpreted and translated documents from/to French, Chinese and English languages.</font>
@@ -315,7 +327,7 @@ images:
                     <div class="resume-content">
                         <h5 class="mb-0 text-secondary">Teaching Assistant</h5>
                         <div class="subheading mb-6 text-secondary">Healer's Society - Abomey-Calavi (Benin)</div>
-                        <div class="subheading mb-6 text-primary">December 2012 - October 2013</div>
+                        <div class="subheading mb-6 text-dark">December 2012 - October 2013</div>
                         <ul class="fa-ul mb-6">
                             <li><font color = "black"><i class="fa-li fa fa-check"></i>
                                 Instructed Freshmen and Sophomore of the English Department of Abomey-calavi University during extracurricular tutoring classes in Mandarin Phonology and English Phonetics</font>
@@ -346,29 +358,39 @@ images:
             <div class="modal-body">
                 <ul class="fa-ul mb-0">
                     <li class = "mb-3"><font color = "black"><i class="fa-li fa fa-check"></i>
-                        RITficial Intelligence (RIT Artificial Intelligence club) - USA
-                        <div class="subheading mb-6 text-primary">Member</div>
-                        <div class="subheading mb-6 text-primary">August 2018 - Present</div></font>
+                        FOSS@RIT (Free and Open Source Software at RIT) - Rochester, NY, USA
+                        <div class="subheading mb-6 text-secondary">Member</div>
+                        <div class="subheading mb-6 text-dark">January 2019 - Present</div></font>
+                    </li>
+                    <li class = "mb-3"><font color = "black"><i class="fa-li fa fa-check"></i>
+                        RITLUG (RIT Linux Users Group) - Rochester, NY, USA
+                        <div class="subheading mb-6 text-secondary">Member</div>
+                        <div class="subheading mb-6 text-dark">January 2019 - Present</div></font>
+                    </li>
+                    <li class = "mb-3"><font color = "black"><i class="fa-li fa fa-check"></i>
+                        RITficial Intelligence (RIT Artificial Intelligence club) - Rochester, NY, USA
+                        <div class="subheading mb-6 text-secondary">Member</div>
+                        <div class="subheading mb-6 text-dark">2018 - 2020</div></font>
                     </li>
                     <li class = "mb-3"><font color = "black"><i class="fa-li fa fa-check"></i>
                         ESW-RIT (Engineers for Sustainable World RIT) - USA
-                        <div class="subheading mb-6 text-primary">Member</div>
-                        <div class="subheading mb-6 text-primary">August 2018 - Present</div></font>
+                        <div class="subheading mb-6 text-secondary">Member</div>
+                        <div class="subheading mb-6 text-dark">2018 - 2020</div></font>
                     </li>
                     <li class = "mb-3"><font color = "black"><i class="fa-li fa fa-check"></i>
                         Chongqing Jiaotong University Radio station - China
-                        <div class="subheading mb-6 text-primary">News Reporter</div>
-                        <div class="subheading mb-6 text-primary">2016 - 2017</div></font>
-                    </li>
-                    <li class = "mb-3"><font color = "black"><i class="fa-li fa fa-check"></i>
-                        TEC (Titigweti English Club) - Benin
-                        <div class="subheading mb-6 text-primary">Head of News Section; Secretary General; Vice-President</div>
-                        <div class="subheading mb-6 text-primary">2011 - 2013</div></font>
+                        <div class="subheading mb-6 text-secondary">News Reporter</div>
+                        <div class="subheading mb-6 text-dark">2016 - 2017</div></font>
                     </li>
                     <li class = "mb-3"><font color = "black"><i class="fa-li fa fa-check"></i>
                         Radio Univers - Benin
-                        <div class="subheading mb-6 text-primary">News Reporter</div>
-                        <div class="subheading mb-6 text-primary">2011 - 2012</div></font>
+                        <div class="subheading mb-6 text-secondary">News Reporter</div>
+                        <div class="subheading mb-6 text-dark">2011 - 2012</div></font>
+                    </li>
+                    <li class = "mb-3"><font color = "black"><i class="fa-li fa fa-check"></i>
+                        TEC (Titigweti English Club) - Benin
+                        <div class="subheading mb-6 text-secondary">Head of News Section; Secretary General; Vice-President; TECMag Editor-in-Chief</div>
+                        <div class="subheading mb-6 text-dark">2011 - 2013</div></font>
                     </li>
                 </ul>
             </div>
@@ -390,11 +412,18 @@ images:
             </div>
             <div class="modal-body">
                 <ul class="fa-ul mb-0">
-                    <li><i class="fa-li fa fa-trophy text-warning"></i>
-                        <font color = "black">'18-20 Fulbright Scholar</font>
+                    <li><font color = "black"><i class="fa-li fa fa-trophy text-warning"></i>
+                        Foundational Leadership for Career Success Certificate
+                        <div class="subheading mb-6 text-secondary">Saunders College of Business | Rochester Institute of Technology</div></font>
+                        <div class="subheading mb-6 text-dark">Spring 2020</div></font>
                     </li>
-                    <li><i class="fa-li fa fa-trophy text-warning"></i>
-                        <font color = "black">'14-18 Chinese Government Scholar</font>
+                    <li><font color = "black"><i class="fa-li fa fa-trophy text-warning"></i>
+                        Fulbright Foreign Student Program
+                        <div class="subheading mb-6 text-dark">2018 - 2020</div></font>
+                    </li>
+                    <li><font color = "black"><i class="fa-li fa fa-trophy text-warning"></i>
+                        Chinese Government Scholarship - University Program
+                        <div class="subheading mb-6 text-dark">2014 - 2018</div></font>
                     </li>
                 </ul>
             </div>

@@ -1,0 +1,11 @@
+---
+type: Data Science &amp Machine Learning
+tools:
+    - name: TensorFlow
+      link: /assets/img/curriculum/tensorflow.png
+
+    - name: Apache Spark
+      link: /assets/img/curriculum/spark.png
+
+    - name: R programming
+      link: /assets/img/curriculum/Rlogo.png

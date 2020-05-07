@@ -1,0 +1,14 @@
+---
+type: Computer Networking, Systems &amp High Performance Computing
+tools:
+    - name: OpenFlow Protocol
+      link: /assets/img/curriculum/openflow.png
+
+    - name: Apache OpenWhisk
+      link: /assets/img/curriculum/openwhisk.png
+
+    - name: OpenMPI
+      link: /assets/img/curriculum/openmpi.png
+
+    - name: OpenMP
+      link: /assets/img/curriculum/openmp.gif

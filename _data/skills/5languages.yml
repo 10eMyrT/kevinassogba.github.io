@@ -1,0 +1,14 @@
+---
+type: Languages
+tools:
+    - name: Java
+      link: /assets/img/curriculum/java.png
+
+    - name: Python
+      link: /assets/img/curriculum/python.png
+
+    - name: C++
+      link: /assets/img/curriculum/cpp.png
+
+    - name: MySQL
+      link: /assets/img/curriculum/mysql.png
