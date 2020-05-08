@@ -12,11 +12,15 @@ permalink: /projects
             <hr class="star-dark mb-5">
             <div class="row">
                 {% for post in site.categories.projects %}
-                    <div class="col-md-6 col-lg-4">
-                        <a class="portfolio-item d-block mx-auto" href="{{ post.url }}">
-                            <img class="img-fluid" src="{{ post.images }}" alt="">
-                            <h4 class="text-center text-secondary mt-3"><font font-family = "verdana">{{ post.title }}</font></h4>
-                        </a>
+                    <div class="col-md-6 col-lg-4 px-3 py-3">
+                        <div class="card h-100 border-0 bg-light">
+                            <img class="card-img-top w-100 h-50 mx-auto" src="{{ post.images }}" alt="">
+                            <div class="card-body text-center">
+                                <a class="portfolio-item d-block mx-auto" href="{{ post.permalink }}">
+                                    <h4 class="text-center text-secondary mt-3"><font font-family = "verdana">{{ post.title }}</font></h4>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 {% endfor %}
             </div>

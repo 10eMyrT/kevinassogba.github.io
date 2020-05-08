@@ -132,16 +132,18 @@ images:
         <hr class="star-light">
         <div class="row">
             {% for post in site.categories.projects %}
-                <div class="card col-xl-4 col-md-6 col-lg-4 col-12 py-4 px-2 border-0 bg-transparent">
+            <div class="col-xl-4 col-md-6 col-lg-6 col-12 py-4 px-2">
+                <div class="card border-0 bg-transparent">
+                    <img class="card-img-top w-50 h-50 mb-3 mx-auto" src="{{ post.images }}" alt="">
                     <div class="card-body text-center">
-                        <img class="w-75 h-50 mb-3" src="{{ post.images }}" alt="Image">
                         <h5 class="card-title mb-3">{{ post.title }}</h5>
                         <div class="card-text text-black">
                             <p>{{ post.excerpt }}</p>
-                            <a class="btn btn-block bg-secondary text-white" href="{{ post.url }}">Learn More</a>
+                            <a class="btn btn-block bg-secondary text-white" href="{{ post.permalink }}">Learn More</a>
                         </div>
                     </div>
                 </div>
+            </div>
             {% endfor %}
         </div>
     </div>

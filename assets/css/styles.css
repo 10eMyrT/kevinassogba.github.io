@@ -51,7 +51,8 @@
 }
 
 .fluid.adjust {
-    padding: 3% 5% 0 5%;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .blog-page: after {
